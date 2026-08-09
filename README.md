@@ -1,6 +1,7 @@
 # 🖥️ Homelab TSSR
 
-![Status](https://img.shields.io/badge/Statut-En%20cours-yellow) ![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation-696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000)
+![Status](https://img.shields.io/badge/Statut-En%20cours-yellow)
+![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation%20Pro-Pro696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Active Directory](https://img.shields.io/badge/Microsoft-Active%20Directory-0078D4) ![Windows 11](https://img.shields.io/badge/OS-Windows%2011-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE) ![Samba](https://img.shields.io/badge/Serveur%20de%20fichiers-Samba-1F3B57) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000) ![pfSense](https://img.shields.io/badge/Pare--feu-pfSense-212121)
 
 Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.
 
