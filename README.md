@@ -1,14 +1,6 @@
 # 🖥️ Homelab TSSR
 
-![Status](https://img.shields.io/badge/Statut-En%20cours-yellow)
-
-![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation-696969)
-
-![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6)
-
-![Debian](https://img.shields.io/badge/OS-Debian-A81D33)
-
-![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000)
+![Status](https://img.shields.io/badge/Statut-En%20cours-yellow) ![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation-696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000)
 
 Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.
 
@@ -24,13 +16,13 @@ Après un BAC+2 Développeur / Intégrateur Web (2017) et plusieurs expériences
 
 ## 🧱 Environnement du lab
 
-L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel sous Windows 11), avec **VMware Workstation Pro** comme hyperviseur unique. Trois machines virtuelles principales composent le socle du lab :
+L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel sous Windows 11), avec **VMware Workstation Pro 26H1** comme hyperviseur unique. Trois machines virtuelles principales composent le socle du lab :
 
 | VM | Rôle |
 |---|---|
-| 🪟 **Windows Server** | Contrôleur de domaine (Active Directory, GPO, supervision, sauvegarde) |
-| 💻 **Windows 11** | Poste client, membre du domaine |
-| 🐧 **Debian** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |
+| 🪟 **Windows Server 2025** | Contrôleur de domaine (Active Directory, GPO, supervision, sauvegarde) |
+| 💻 **Windows 11 25H2** | Poste client, membre du domaine |
+| 🐧 **Debian 13 netinst "Trixie"** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |
 
 
 ## 🗂️ Sommaire de l'arborescence
@@ -45,11 +37,11 @@ homelab-journey/
 │   └── README.md                 → notes Cisco Networking Academy (bases réseau)
 │
 ├── lab1-infrastructure/
-│   ├── 1.1-hyperviseur/          → installation et configuration de VMware Workstation
-│   ├── 1.2-windows-server/       → déploiement de Windows Server
+│   ├── 1.1-hyperviseur/          → installation et configuration de VMware Workstation Pro 26H1
+│   ├── 1.2-windows-server/       → déploiement de Windows Server 2025
 │   ├── 1.3-active-directory/     → domaine AD, unités d'organisation, utilisateurs
 │   ├── 1.4-gpo/                  → stratégies de groupe
-│   ├── 1.5-linux/                → installation et administration Debian
+│   ├── 1.5-linux/                → installation et administration Debian 13 netinst "Trixie"
 │   ├── 1.6-services-linux/       → services Linux (partage, web, etc.)
 │   ├── 1.7-powershell/           → scripts et automatisation
 │   ├── 1.8-serveur-fichiers/     → serveur de fichiers Samba
