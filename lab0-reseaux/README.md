@@ -1,7 +1,7 @@
 ### Mise a niveau sur les notions de base de mise en réseau ###
 
 
-Je me suis servis de la Networking Academy de Cisco afin de m'octroyer des notions solide pour la suite du développement du projet homelab.
+Je me suis servis de la Cisco Networking Academy afin de m'octroyer des notions solide pour la suite du développement du projet homelab.
 
 Ce cours, de 22 heures, fait partie du Parcours professionnel - Network Technician certifiant de l'academie Cisco. 
 
@@ -11,3 +11,5 @@ Comme expliqué sur [la page d'information de leur cours](https://www.netacad.co
 
 J'ai également ajouté deux screenshots ; le premier étant ma note de 88% a l'examen final du cours, la seconde le badge Cisco Networking basics pour avoir eux plus de 70% de bonnes réponses a l'examen final.
 
+![Screenshot du badge Cisco Networking Basics.](badge-networking-basics-cisco-academy.png)
+![Screenshot du résultat de la note de l'examen final du cours avec le détail par catégorie.](note-networking-basics-cisco-academy.png)
