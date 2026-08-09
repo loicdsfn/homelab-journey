@@ -1,9 +1,10 @@
 # 🖥️ Homelab TSSR
 
 ![Status](https://img.shields.io/badge/Statut-En%20cours-yellow)\
+\
 ![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation%20Pro-Pro696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Active Directory](https://img.shields.io/badge/Microsoft-Active%20Directory-0078D4) ![Windows 11](https://img.shields.io/badge/OS-Windows%2011-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![PowerShell](https://img.shields.io/badge/Automatisation-PowerShell-5391FE) ![Samba](https://img.shields.io/badge/Serveur%20de%20fichiers-Samba-1F3B57) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000) ![pfSense](https://img.shields.io/badge/Pare--feu-pfSense-212121)
 
-Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.\
+Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.
 
 
 ## 🎯 Objectifs du projet
@@ -12,7 +13,7 @@ Après un BAC+2 Développeur / Intégrateur Web (2017) et plusieurs expériences
 
 - Mettre en pratique, de façon autodidacte, les compétences fondamentales d'un TSSR : réseaux, virtualisation, administration Windows et Linux, supervision, sauvegarde et sécurité
 - Documenter une véritable montée en compétences, étape par étape, avec les difficultés rencontrées et ce qui en a été retenu — pas seulement une liste de technologies
-- Servir de preuve concrète de motivation et d'autonomie technique auprès des entreprises, dans le cadre de ma recherche d'un contrat de professionnalisation\
+- Servir de preuve concrète de motivation et d'autonomie technique auprès des entreprises, dans le cadre de ma recherche d'un contrat de professionnalisation
 
 
 ## 🧱 Environnement du lab
@@ -23,7 +24,7 @@ L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel s
 |---|---|
 | 🪟 **Windows Server 2025** | Contrôleur de domaine (Active Directory, GPO, supervision, sauvegarde) |
 | 💻 **Windows 11 25H2** | Poste client, membre du domaine |
-| 🐧 **Debian 13 netinst "Trixie"** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |\
+| 🐧 **Debian 13 netinst "Trixie"** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |
 
 
 ## 🗂️ Sommaire de l'arborescence
@@ -54,7 +55,7 @@ homelab-journey/
      └── README.md                 → scénarios de pannes, méthode de diagnostic et résolution
 ```
 
-Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du lab, les étapes réalisées, les difficultés rencontrées et ce qui en a été retenu.\
+Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du lab, les étapes réalisées, les difficultés rencontrées et ce qui en a été retenu.
 
 
 ## 📈 Progression
