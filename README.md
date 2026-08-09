@@ -42,6 +42,7 @@ homelab-journey/
 │   ├── 1.1-hyperviseur/          → installation et configuration de VMware Workstation Pro 26H1
 │   ├── 1.2-windows-server/       → déploiement de Windows Server 2025
 │   ├── 1.3-active-directory/     → domaine AD, unités d'organisation, utilisateurs
+│   ├── 1.3b-poste-client-w11/    → jonction du poste Windows 11 au domaine, connexion utilisateur, tests
 │   ├── 1.4-gpo/                  → stratégies de groupe
 │   ├── 1.5-linux/                → installation et administration Debian 13 netinst "Trixie"
 │   ├── 1.6-services-linux/       → services Linux (partage, web, etc.)
