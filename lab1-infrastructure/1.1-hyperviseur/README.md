@@ -13,6 +13,7 @@ J'ai choisi **VMware Workstation Pro** comme hyperviseur unique pour tout le hom
 - VMware Workstation Pro 26H1 (gratuit en usage personnel)
 - ISO Windows Server 2025 Standard Evaluation (Expérience utilisateur), ISO Windows 10 Pro 22H2, ISO Debian 13 "Trixie" (netinst)
 - Réseau virtuel en mode **Pont (Bridge)**
+![Schema du réseau homelab.](../../docs/schema_reseau_homelab.png)
 
 ## Étapes réalisées
  
