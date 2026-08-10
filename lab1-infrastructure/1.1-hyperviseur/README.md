@@ -36,7 +36,7 @@ J'ai choisi **VMware Workstation Pro** comme hyperviseur unique pour tout le hom
 - **Décision** : plutôt que de s'acharner sur un problème non résolu après de nombreuses heures de dépannage, j'ai choisi de basculer sur **Windows 10 Pro** pour le poste client, qui remplit exactement le même rôle dans le lab (jonction au domaine Active Directory, tests GPO, permissions) sans nécessiter les mêmes prérequis matériels stricts (TPM 2.0, Secure Boot, 2 cœurs minimum)
 ### Windows 10 (solution retenue)
  
-- Installation sans blocage matériel, mais nécessité de contourner la création forcée d'un compte Microsoft en ligne pendant l'OOBE (utilisation de la commande `ms-cxh:localonly` pour obtenir directement un compte local)
+- Installation sans blocage matériel, mais nécessité de contourner la création forcée d'un compte Microsoft en ligne pendant l'installation (utilisation de la commande `ms-cxh:localonly` pour obtenir directement un compte local)
 
 ### Debian
  
@@ -45,7 +45,7 @@ J'ai choisi **VMware Workstation Pro** comme hyperviseur unique pour tout le hom
 ## Ce que j'ai retenu
  
 - Une erreur WHEA côté VM ne provient pas nécessairement d'un vrai problème matériel de l'hôte : elle peut être générée par l'hyperviseur lui-même sans que rien n'apparaisse dans les journaux d'événements Windows de l'hôte — un point qui peut facilement induire en erreur lors du diagnostic
-- Savoir **abandonner une piste après un dépannage méthodique et raisonnable**, plutôt que de s'acharner indéfiniment, est aussi une compétence utile en administration système : Windows 10 remplissait le besoin du lab tout aussi bien que Windows 11
+- Savoir **abandonner une piste après un dépannage méthodique et raisonnable**, plutôt que de s'acharner indéfiniment : Windows 10 remplissait le besoin du lab tout aussi bien que Windows 11
 - L'importance de désactiver la mise en veille du PC hôte avant toute installation longue ou manipulation sensible sur une VM, pour éviter toute corruption
 - Toujours vérifier le montage effectif d'une ISO avant de démarrer une VM, plutôt que de supposer que le chemin a été correctement renseigné
 - Sous Linux, une erreur de connexion peut se résoudre simplement en se connectant en root pour réinitialiser le mot de passe concerné, sans réinstaller quoi que ce soit
