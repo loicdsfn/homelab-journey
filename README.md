@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/Statut-En%20cours-yellow)\
 \
-![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation%20Pro-Pro696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Active Directory](https://img.shields.io/badge/Microsoft-Active%20Directory-0078D4) ![Windows 11](https://img.shields.io/badge/OS-Windows%2011-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![PowerShell](https://img.shields.io/badge/Automatisation-PowerShell-5391FE) ![Samba](https://img.shields.io/badge/Serveur%20de%20fichiers-Samba-1F3B57) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000) ![pfSense](https://img.shields.io/badge/Pare--feu-pfSense-212121)
+![VMware](https://img.shields.io/badge/Hyperviseur-VMware%20Workstation%20Pro-Pro696969) ![Windows Server](https://img.shields.io/badge/OS-Windows%20Server-0078D6) ![Active Directory](https://img.shields.io/badge/Microsoft-Active%20Directory-0078D4) ![Windows 10](https://img.shields.io/badge/OS-Windows%2010-0078D6) ![Debian](https://img.shields.io/badge/OS-Debian-A81D33) ![PowerShell](https://img.shields.io/badge/Automatisation-PowerShell-5391FE) ![Samba](https://img.shields.io/badge/Serveur%20de%20fichiers-Samba-1F3B57) ![Zabbix](https://img.shields.io/badge/Supervision-Zabbix-D40000) ![pfSense](https://img.shields.io/badge/Pare--feu-pfSense-212121)
 
 Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.
 
@@ -18,12 +18,12 @@ Après un BAC+2 Développeur / Intégrateur Web (2017) et plusieurs expériences
 
 ## 🧱 Environnement du lab
 
-L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel sous Windows 11), avec **VMware Workstation Pro 26H1** comme hyperviseur unique. Trois machines virtuelles principales composent le socle du lab :
+L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel sous Windows 11), avec **VMware Workstation Pro 26H1** comme hyperviseur unique, réseau virtuel en mode **Pont (Bridge)**. Trois machines virtuelles principales composent le socle du lab :
 
 | VM | Rôle |
 |---|---|
 | 🪟 **Windows Server 2025** | Contrôleur de domaine (Active Directory, GPO, supervision, sauvegarde) |
-| 💻 **Windows 11 25H2** | Poste client, membre du domaine |
+| 💻 **Windows 10 22H2** | Poste client, membre du domaine |
 | 🐧 **Debian 13 netinst "Trixie"** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |
 
 
@@ -31,7 +31,6 @@ L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel s
 
 ```
 homelab-journey/
-
 ├── README.md                    → ce fichier : présentation, objectifs, sommaire
 ├── docs/                        → schémas réseau, captures d'écran
 │
@@ -39,21 +38,18 @@ homelab-journey/
 │   └── README.md                 → notes Cisco Networking Academy (bases réseau)
 │
 ├── lab1-infrastructure/
-│   ├── 1.1-hyperviseur/          → installation et configuration de VMware Workstation Pro 26H1
-│   ├── 1.2-windows-server/       → déploiement de Windows Server 2025
-│   ├── 1.3-active-directory/     → domaine AD, unités d'organisation, utilisateurs
-│   ├── 1.3b-poste-client-w11/    → jonction du poste Windows 11 au domaine, connexion utilisateur, tests
-│   ├── 1.4-gpo/                  → stratégies de groupe
-│   ├── 1.5-linux/                → installation et administration Debian 13 netinst "Trixie"
-│   ├── 1.6-services-linux/       → services Linux (partage, web, etc.)
-│   ├── 1.7-powershell/           → scripts et automatisation
-│   ├── 1.8-serveur-fichiers/     → serveur de fichiers Samba
-│   ├── 1.9-sauvegarde/           → politique de sauvegarde et tests de restauration
-│   ├── 1.10-supervision/         → supervision avec Zabbix
-│   └── 1.11-securite/            → VLAN, pare-feu, durcissement AD et Linux
+│   ├── 1.1-hyperviseur/          → installation de VMware Workstation + configuration des 3 VM
+│   ├── 1.2-active-directory/     → domaine AD, unités d'organisation, utilisateurs, jonction de la VM Windows 10 au domaine 
+│   ├── 1.3-gpo/                  → stratégies de groupe
+│   ├── 1.4-services-linux/       → services Linux (partage, web, etc.)
+│   ├── 1.5-powershell/           → scripts et automatisation
+│   ├── 1.6-serveur-fichiers/     → serveur de fichiers Samba
+│   ├── 1.7-sauvegarde/           → politique de sauvegarde et tests de restauration
+│   ├── 1.8-supervision/          → supervision avec Zabbix
+│   └── 1.9-securite/             → VLAN, pare-feu, durcissement AD et Linux
 │
 └── lab2-pannes/
-     └── README.md                 → scénarios de pannes, méthode de diagnostic et résolution
+    └── README.md                 → scénarios de pannes, méthode de diagnostic et résolution
 ```
 
 Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du lab, les étapes réalisées, les difficultés rencontrées et ce qui en a été retenu.
@@ -62,7 +58,7 @@ Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du 
 ## 📈 Progression
 
 - [x] Lab 0 — Fondamentaux réseau
-- [x] Lab 1.1 — Hyperviseur
-- [ ] Lab 1.2 à 1.11 — En cours
+- [x] Lab 1.1 — Hyperviseur (Windows Server, Windows 10, Debian installés et snapshotés)
+- [ ] Lab 1.2 à 1.9 — En cours
 - [ ] Lab 2 — Simulation de pannes
 
