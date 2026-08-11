@@ -59,6 +59,7 @@ Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du 
 
 - [x] Lab 0 — Fondamentaux réseau
 - [x] Lab 1.1 — Hyperviseur (Windows Server, Windows 10, Debian installés et snapshotés)
-- [ ] Lab 1.2 à 1.9 — En cours
+- [ ] Lab 1.2 — Active Directory (OU, utilisateurs, jonction de la VM Windows 10 au domaine)
+- [ ] Lab 1.3 à 1.9 — En cours
 - [ ] Lab 2 — Simulation de pannes
 
