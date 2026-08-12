@@ -1,4 +1,4 @@
-# 🖥️ Homelab TSSR
+# Homelab TSSR
 
 ![Status](https://img.shields.io/badge/Statut-En%20cours-yellow)\
 \
@@ -7,7 +7,7 @@
 Documentation de mon homelab autodidacte, réalisé en vue d'un contrat de professionnalisation pour le titre **TSSR (Technicien Supérieur Systèmes et Réseaux)**.
 
 
-## 🎯 Objectifs du projet
+## Objectifs du projet
 
 Après un BAC+2 Développeur / Intégrateur Web (2017) et plusieurs expériences en développement web, j'ai choisi de me spécialiser en administration systèmes et réseaux. Ce homelab a pour but de :
 
@@ -16,7 +16,7 @@ Après un BAC+2 Développeur / Intégrateur Web (2017) et plusieurs expériences
 - Servir de preuve concrète de motivation et d'autonomie technique auprès des entreprises, dans le cadre de ma recherche d'un contrat de professionnalisation
 
 
-## 🧱 Environnement du lab
+## Environnement du lab
 
 L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel sous Windows 11), avec **VMware Workstation Pro 26H1** comme hyperviseur unique, réseau virtuel en mode **Pont (Bridge)**. Trois machines virtuelles principales composent le socle du lab :
 
@@ -27,7 +27,7 @@ L'ensemble de l'infrastructure est virtualisé sur un seul poste (PC personnel s
 | 🐧 **Debian 13 netinst "Trixie"** | Serveur Linux (services, partage de fichiers Samba, supervision Zabbix) |
 
 
-## 🗂️ Sommaire de l'arborescence
+## Sommaire de l'arborescence
 
 ```
 homelab-journey/
@@ -55,11 +55,12 @@ homelab-journey/
 Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du lab, les étapes réalisées, les difficultés rencontrées et ce qui en a été retenu.
 
 
-## 📈 Progression
+## Progression
 
 - [x] Lab 0 — Fondamentaux réseau
 - [x] Lab 1.1 — Hyperviseur (Windows Server, Windows 10, Debian installés et snapshotés)
 - [x] Lab 1.2 — Active Directory (OU, utilisateurs, jonction de la VM Windows 10 au domaine)
-- [ ] Lab 1.3 à 1.9 — En cours
+- [x] Lab 1.3 — Mise en place GPO restrictions panneau de configuration étendu au 3 OU (RH, Communication, Marketing)
+- [ ] Lab 1.4 à 1.9 — En cours
 - [ ] Lab 2 — Simulation de pannes
 
