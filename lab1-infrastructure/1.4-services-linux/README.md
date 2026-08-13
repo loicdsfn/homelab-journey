@@ -24,7 +24,7 @@ Préparer et sécuriser la VM Debian 13 en installant et configurant les service
 - Autorisation du port SSH standard (`sudo ufw allow 22/tcp`) pour conserver l'accès à distance.
 - Ouverture des flux HTTP et HTTPS nécessaires pour Nginx (`sudo ufw allow 'Nginx Full'`).
 
-8. **Activation du pare-feu :** Démarrage et application des règles au lancement du système via `sudo ufw enable`, suivi d'une vérification du statut avec `sudo ufw status`.
+8. **Activation du pare-feu :** Démarrage et application des règles au lancement du système via `sudo ufw enable`, suivi d'une vérification du statut avec `sudo ufw status`.\
 ![Screenshot status UFW.](../../docs/lab1.4-UFW-enable.png)
 
 ## Difficultés rencontrées
@@ -51,4 +51,4 @@ Préparer et sécuriser la VM Debian 13 en installant et configurant les service
 
 - **L'anticipation des besoins applicatifs :** Installer **Nginx** en amont me permet de valider les flux réseau Web à travers le pare-feu avant d'installer le superviseur Zabbix.
 
-- **Prochaine étape (lab 1.5) :** Configuration et attribution des adresses IP statiques et du DNS pour ancrer définitivement la Debian dans le réseau local du laboratoire.
+- **Prochaine étape (lab 1.5) : Scripts et automatisation avec PowerShell. Mise en place d'un script d'automatisation d'enregistrement des utilisateurs via un fichier .csv
