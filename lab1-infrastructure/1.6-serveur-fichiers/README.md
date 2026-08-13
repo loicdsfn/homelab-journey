@@ -19,7 +19,7 @@ Pour la VM Debian 13 via le fichier `/etc/sysctl.conf` et la commande `sysctl -p
 sudo apt update && sudo apt install samba samba-common-bin winbind libnss-winbind -y
 ```
 
-3. Modification du fichier de configuration réseau `/etc/nsswitch.conf` pour ordonner au système d'exploitation Linux d'interroger Winbind pour la gestion des utilisateurs (`passwd`) et des groupes (`group`).
+3. Modification du fichier de configuration réseau `/etc/nsswitch.conf` pour ordonner au système d'exploitation Linux d'interroger Winbind pour la gestion des utilisateurs (`passwd`) et des groupes (`group`).\
 ![Screenshot fichier de configuration nsswitch.conf.](../../docs/lab1.6-nsswitch-conf.png)
 
 4. Configuration de la section `[global]` du fichier `/etc/samba/smb.conf` : déclaration du domaine, activation de la sécurité `ads` (Active Directory), et mise en place du traducteur d'identité **RID** pour calculer automatiquement les UID/GID Linux à partir des SID Windows.
@@ -32,7 +32,7 @@ sudo mkdir -p /srv/partage/rh /srv/partage/marketing /srv/partage/communication
 sudo chmod -R 777 /srv/partage/
 ```
 
-6. Déclaration des partages sécurisés à la fin du fichier `smb.conf` en restreignant l'accès via le paramètre `valid users = @"LAB\nom-du-groupe"`.
+6. Déclaration des partages sécurisés à la fin du fichier `smb.conf` en restreignant l'accès via le paramètre `valid users = @"LAB\nom-du-groupe"`.\
 ![Screenshot fichier de configuration Samba.](../../docs/lab1.6-samba-conf-partage.png)
 
 7. Génération d'un ticket Kerberos administrateur (`kinit`) et jonction officielle de la machine Linux au domaine Windows Server 2025 via la commande `net ads join`.
@@ -69,7 +69,4 @@ sudo systemctl restart smbd winbind
 
 - Windows intègre de lourdes restrictions de sécurité natives qui bloquent l'envoi d'identifiants de session transparents vers des adresses IP brutes. Pour qu'un environnement d'entreprise fonctionne, il faut s'appuyer à 100 % sur la résolution de noms DNS (`\\nom-serveur`).
 
-- Prochaine étape (lab 1.7) : Scripts et automatisation avec PowerShell. Mise en place d'un script d'automatisation d'enregistrement des utilisateurs via un fichier .csv
-
-
-
+- Prochaine étape (lab 1.7) : Politique de sauvegarde et tests de restauration
