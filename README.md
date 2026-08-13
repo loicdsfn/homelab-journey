@@ -61,6 +61,9 @@ Chaque sous-dossier contient son propre `README.md` détaillant : l'objectif du 
 - [x] Lab 1.1 — Hyperviseur (Windows Server, Windows 10, Debian installés et snapshotés)
 - [x] Lab 1.2 — Active Directory (OU, utilisateurs, jonction de la VM Windows 10 au domaine)
 - [x] Lab 1.3 — Mise en place GPO restrictions panneau de configuration étendu au 3 OU (RH, Communication, Marketing)
-- [ ] Lab 1.4 à 1.9 — En cours
+- [x] Lab 1.4 — Mise en place des services linux (SSH, Nginx, Chrony, UFW)
+- [ ] Lab 1.5 — En cours
+- [x] Lab 1.6 — Serveur Samba + GPO pour deployer automatiquement le lecteur mappé par OU 
+- [ ] Lab 1.7 à 1.9 — En cours
 - [ ] Lab 2 — Simulation de pannes
 
