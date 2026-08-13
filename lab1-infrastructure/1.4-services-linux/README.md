@@ -45,10 +45,10 @@ Préparer et sécuriser la VM Debian 13 en installant et configurant les service
 
 - Sur une Debian minimale, `sudo` n'est pas installé par défaut — rester connecté en root en permanence est une mauvaise pratique à éviter, même quand c'est plus rapide sur le moment
 
-- **L'importance de la synchronisation horaire avec Active Directory :** Le protocole Kerberos possède une tolérance maximale par défaut de 5 minutes de décalage entre les machines d'un domaine. L'installation de **Chrony** me garantit la stabilité des futurs raccordements de sécurité.
+- L'importance de la synchronisation horaire avec Active Directory : Le protocole Kerberos possède une tolérance maximale par défaut de 5 minutes de décalage entre les machines d'un domaine. L'installation de **Chrony** me garantit la stabilité des futurs raccordements de sécurité.
 
-- **La simplification de l'administration pare-feu grâce à UFW :** L'utilisation de profils applicatifs natifs (comme `'Nginx Full'`) permet d'ouvrir simultanément et proprement les ports nécessaires (80 et 443) sans risque d'erreur humaine sur la syntaxe réseau. Avec `ufw`, l'ordre des opérations compte : toujours autoriser SSH avant d'activer le pare-feu, sous peine de se couper soi-même l'accès à distance
+- La simplification de l'administration pare-feu grâce à UFW : L'utilisation de profils applicatifs natifs (comme `'Nginx Full'`) permet d'ouvrir simultanément et proprement les ports nécessaires (80 et 443) sans risque d'erreur humaine sur la syntaxe réseau. Avec `ufw`, l'ordre des opérations compte : toujours autoriser SSH avant d'activer le pare-feu, sous peine de se couper soi-même l'accès à distance
 
-- **L'anticipation des besoins applicatifs :** Installer **Nginx** en amont me permet de valider les flux réseau Web à travers le pare-feu avant d'installer le superviseur Zabbix.
+- L'anticipation des besoins applicatifs : Installer **Nginx** en amont me permet de valider les flux réseau Web à travers le pare-feu avant d'installer le superviseur Zabbix.
 
-- **Prochaine étape (lab 1.5) : Scripts et automatisation avec PowerShell. Mise en place d'un script d'automatisation d'enregistrement des utilisateurs via un fichier .csv
+- Prochaine étape (lab 1.5) : Scripts et automatisation avec PowerShell. Mise en place d'un script d'automatisation d'enregistrement des utilisateurs via un fichier .csv
